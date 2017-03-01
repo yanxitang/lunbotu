@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #slide{width:200px;height:200px;background:red}
+    </style>
+</head>
+<body>
+<p id="test">点击显示</p>
+<img src="1.jpg" id="showImg" width="600px" height="300px"/>
+<div id="slide"></div>
+<script src="jqery1.js"></script>
+<script>
+//   function $(id){
+//        return document.getElementById(id);
+//    }
+//    $('test').onclick=function(){
+//        $('show-image').style.display='none';
+//    }
+  $('test').click(function(){
+      //键key 值value
+      //$('slide').css({"background":"black","width":"300px","height":"300px"});
+      //$('slide').fadeIn(0.3);
+      $('showImg').slideToggle(300);
+  });
+    console.log($('test'))
+</script>
+
+</body>
+</html>

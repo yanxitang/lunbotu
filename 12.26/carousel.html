@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        .container{width:800px;height:500px;overflow:hidden;position:relative}
+        .container ul{width:3200px;position :absolute;left: 0px}
+        .container ul li{float:left;width:800px;list-style: none}
+        .container ul li img{width:800px}
+        span{
+            display:inline-block;
+            top:150px;
+            cursor: pointer;
+            background: rgba(255,255,255,0.6);
+            height: 30px;width: 50px;text-align: center;
+            line-height: 30px;position: absolute;
+        }
+        span#next{left:750px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul id="caro">
+        <li><img src="1.jpg"></li>
+        <li><img src="2.jpg"></li>
+        <li><img src="3.jpg"></li>
+        <li><img src="4.jpg"></li>
+
+    </ul>
+    <span id="span">
+        <
+    </span>
+    <span id="next">
+        >
+    </span>
+</div>
+<script src="craousel1.js"></script>
+<script>
+    var caro=document.getElementById('caro');
+    caro.carousel();
+</script>
+
+</body>
+</html>
